@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="222.0" prefWidth="254.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.virginia.cs.gui.WordleController">
+
+    <Label fx:id="welcomeText" text="Wordle" textFill="grey" />
+    <GridPane fx:id="grid" alignment="CENTER" gridLinesVisible="true">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="50.0"/>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="76.0" minWidth="10.0" prefWidth="50.0"/>
+            <ColumnConstraints halignment="CENTER" maxWidth="71.0" minWidth="30.666666666666657" prefWidth="50.0"/>
+            <ColumnConstraints halignment="CENTER" maxWidth="120.66666666666667" minWidth="46.66666666666666"
+                               prefWidth="50"/>
+            <ColumnConstraints halignment="CENTER" maxWidth="75.66666666666666" minWidth="36.66666666666666"
+                               prefWidth="50"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints/>
+        </rowConstraints>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+        </padding>
+        <Label fx:id="RowOneOne" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="50"/>
+        <Label fx:id="RowOneTwo" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="50"/>
+        <Label fx:id="RowOneThree" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               GridPane.columnIndex="2" GridPane.rowIndex="0" prefWidth="50"/>
+        <Label fx:id="RowOneFour" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="0" prefWidth="50"/>
+        <Label fx:id="RowOneFive" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="0" prefWidth="50"/>
+        <Label fx:id="RowTwoOne" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.rowIndex="1" prefWidth="50"/>
+        <Label fx:id="RowTwoTwo" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1" prefWidth="50"/>
+        <Label fx:id="RowTwoThree" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" prefWidth="50"/>
+        <Label fx:id="RowTwoFour" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1" prefWidth="50"/>
+        <Label fx:id="RowTwoFive" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1" prefWidth="50"/>
+        <Label fx:id="RowThreeOne" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.rowIndex="2" prefWidth="50"/>
+        <Label fx:id="RowThreeTwo" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="50"/>
+        <Label fx:id="RowThreeThree" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" prefWidth="50"/>
+        <Label fx:id="RowThreeFour" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2" prefWidth="50"/>
+        <Label fx:id="RowThreeFive" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="2" prefWidth="50"/>
+        <Label fx:id="RowFourOne" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.rowIndex="3" prefWidth="50"/>
+        <Label fx:id="RowFourTwo" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3" prefWidth="50"/>
+        <Label fx:id="RowFourThree" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" prefWidth="50"/>
+        <Label fx:id="RowFourFour" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3" prefWidth="50"/>
+        <Label fx:id="RowFourFive" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="3" prefWidth="50"/>
+        <Label fx:id="RowFiveOne" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.rowIndex="4" prefWidth="50"/>
+        <Label fx:id="RowFiveTwo" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="4" prefWidth="50"/>
+        <Label fx:id="RowFiveThree" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" prefWidth="50"/>
+        <Label fx:id="RowFiveFour" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4" prefWidth="50"/>
+        <Label fx:id="RowFiveFive" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="4" prefWidth="50"/>
+        <Label fx:id="RowSixOne" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="0" GridPane.rowIndex="5" prefWidth="50"/>
+        <Label fx:id="RowSixTwo" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="5" prefWidth="50"/>
+        <Label fx:id="RowSixThree" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" prefWidth="50"/>
+        <Label fx:id="RowSixFour" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="5" prefWidth="50"/>
+        <Label fx:id="RowSixFive" alignment="CENTER" contentDisplay="CENTER" style="-fx-background-color: black"
+               textAlignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="5" prefWidth="50"/>
+
+
+    </GridPane>
+
+
+    <Button onAction="#onEnterButtonClick" prefHeight="31.0" prefWidth="47.0" style="-fx-background-color: #808080;" text="Enter" textFill="black" visible="false"/>
+    <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+        <Button fx:id="playAgainButton" mnemonicParsing="false" onAction="#onPlayButtonClick" style="-fx-background-color: #808080" text="Yes!" textFill="black" visible="false" />
+        <Button fx:id="closeGameButton" mnemonicParsing="false" onAction="#onQuitButtonClick" style="-fx-background-color: #808080" text="No" textAlignment="CENTER" textFill="black" visible="false" />
+    </HBox>
+</VBox>
